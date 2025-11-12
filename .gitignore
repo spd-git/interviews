@@ -1,0 +1,21 @@
+# do not commit python .pyc files
+*.pyc
+*.pyo
+*.DS_Store
+__pycache__/
+
+**/env/
+**/venv/
+**/.idea/sonarlint/
+**/.idea/copilot/
+# do not commit pycharm idea files
+#**.idea/
+*.vscode
+
+# do not commit local install, tmp, log files
+**/tmp/
+**/logs/
+**/build/
+
+# do not commit ipython notebook checkpoints
+**/.ipynb_checkpoints/
