@@ -1,0 +1,311 @@
+Title: Lowest Common Ancestor of a Binary Search Tree - LeetCode
+
+URL Source: https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/
+
+Markdown Content:
+Lowest Common Ancestor of a Binary Search Tree - LeetCode
+
+===============
+
+[![Image 3: LeetCode Logo](https://leetcode.com/_next/static/images/logo-dark-c96c407d175e36c81e236fcfdd682a0b.png) ![Image 4: LeetCode Logo](https://leetcode.com/_next/static/images/logo-ff2b712834cf26bf50a5de58ee27bcef.png)](https://leetcode.com/)
+
+Problem List
+
+Problem List
+
+[](https://leetcode.com/problemset/)
+
+[](https://leetcode.com/problems/palindrome-linked-list)[](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree)
+
+![Image 5: Judging...](https://leetcode.com/_next/static/images/light-judging-9d7b0f1c4035b59af3a7d6ccd8e0ac12.gif)![Image 6: Pending...](https://leetcode.com/_next/static/images/light-pending-9c28f1f18993ec103b273778b5f6a648.gif)
+
+![Image 7: Debugging...](https://leetcode.com/_next/static/images/premium-lightning-judging-4387bb93db459811b028131cb5ea75d4.gif)
+
+Debugging...
+
+Submit
+
+00:00:00
+
+[Register](https://leetcode.com/accounts/signup/?next=%2Fproblems%2Flowest-common-ancestor-of-a-binary-search-tree%2Fdescription%2F)or[Log in](https://leetcode.com/accounts/login/?next=%2Fproblems%2Flowest-common-ancestor-of-a-binary-search-tree%2Fdescription%2F)
+
+[Premium](https://leetcode.com/subscribe/?ref=lp_pl&source=qd)
+
+Description
+
+Description
+
+Editorial
+
+Editorial
+
+Solutions
+
+Solutions
+
+Submissions
+
+Submissions
+
+Code
+
+Code
+
+Testcase
+
+Testcase
+
+Test Result
+
+Test Result
+
+[235. Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/)
+
+Medium
+
+Topics
+
+![Image 8: icon](https://leetcode.com/_next/static/images/lock-a6627e2c7fa0ce8bc117c109fb4e567d.svg)Companies
+
+Given a binary search tree (BST), find the lowest common ancestor (LCA) node of two given nodes in the BST.
+
+According to the [definition of LCA on Wikipedia](https://en.wikipedia.org/wiki/Lowest_common_ancestor): “The lowest common ancestor is defined between two nodes `p` and `q` as the lowest node in `T` that has both `p` and `q` as descendants (where we allow **a node to be a descendant of itself**).”
+
+**Example 1:**
+
+![Image 9](https://assets.leetcode.com/uploads/2018/12/14/binarysearchtree_improved.png)**Input:** root = [6,2,8,0,4,7,9,null,null,3,5], p = 2, q = 8
+**Output:** 6
+**Explanation:** The LCA of nodes 2 and 8 is 6.
+
+**Example 2:**
+
+![Image 10](https://assets.leetcode.com/uploads/2018/12/14/binarysearchtree_improved.png)**Input:** root = [6,2,8,0,4,7,9,null,null,3,5], p = 2, q = 4
+**Output:** 2
+**Explanation:** The LCA of nodes 2 and 4 is 2, since a node can be a descendant of itself according to the LCA definition.
+
+**Example 3:**
+
+**Input:** root = [2,1], p = 2, q = 1
+**Output:** 2
+
+**Constraints:**
+
+*   The number of nodes in the tree is in the range `[2, 105]`.
+*   `-109 <= Node.val <= 109`
+*   All `Node.val` are **unique**.
+*   `p != q`
+*   `p` and `q` will exist in the BST.
+
+Accepted
+
+2,098,955/3M
+
+Acceptance Rate
+
+69.5%
+
+* * *
+
+Topics
+
+[Tree](https://leetcode.com/tag/tree/)[Depth-First Search](https://leetcode.com/tag/depth-first-search/)[Binary Search Tree](https://leetcode.com/tag/binary-search-tree/)[Binary Tree](https://leetcode.com/tag/binary-tree/)
+
+* * *
+
+![Image 11: icon](https://leetcode.com/_next/static/images/lock-a6627e2c7fa0ce8bc117c109fb4e567d.svg)
+
+Companies
+
+* * *
+
+Similar Questions
+
+[Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/)
+
+Medium
+
+[Smallest Common Region](https://leetcode.com/problems/smallest-common-region/)
+
+Medium
+
+[Lowest Common Ancestor of a Binary Tree II](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree-ii/)
+
+Medium
+
+[Lowest Common Ancestor of a Binary Tree III](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree-iii/)
+
+Medium
+
+[Lowest Common Ancestor of a Binary Tree IV](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree-iv/)
+
+Medium
+
+* * *
+
+Discussion (140)
+
+Choose a type
+
+Comment
+
+💡 Discussion Rules
+
+1. Please don't post **any solutions** in this discussion.
+
+2. The problem discussion is for asking questions about the problem or for sharing tips - anything except for solutions.
+
+3. If you'd like to share your solution for feedback and ideas, please head to the solutions tab and post it there.
+
+Sort by:Best
+
+No comments yet.
+
+1 2 3 4 14
+
+Copyright © 2025 LeetCode. All rights reserved.
+
+12.1K
+
+140
+
+124 Online
+
+C++
+
+Auto
+
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10
+
+11
+
+12
+
+13
+
+14
+
+15
+
+16
+
+/**
+
+*Definition for a binary tree node.
+
+*struct TreeNode{
+
+*int val;
+
+*TreeNode*left;
+
+*TreeNode*right;
+
+*TreeNode(int x):val(x),left(NULL),right
+
+(NULL){}
+
+*};
+
+*/
+
+class Solution{
+
+public:
+
+TreeNode*lowestCommonAncestor(TreeNode*root,
+
+TreeNode*p,TreeNode*q){
+
+}
+
+};
+
+Saved
+
+Ln 1, Col 1
+
+You need to [log in / sign up](https://leetcode.com/accounts/login/?next=%2Fproblems%2Flowest-common-ancestor-of-a-binary-search-tree%2Fdescription%2F) to run or submit
+
+Case 1 Case 2 Case 3
+
+root =
+
+[6,2,8,0,4,7,9,null,null,3,5]
+
+p =
+
+2
+
+q =
+
+8
+
+9
+
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+›
+
+[6,2,8,0,4,7,9,null,null,3,5]
+
+2
+
+8
+
+[6,2,8,0,4,7,9,null,null,3,5]
+
+2
+
+4
+
+[2,1]
+
+2
+
+1
+
+Source
+
+[](https://support.leetcode.com/hc/en-us/articles/32442719377939-How-to-create-test-cases-on-LeetCode)
+
+FindHeaderBarSize
+
+FindTabBarSize
+
+FindBorderBarSize
+
+[](https://leetcode.com/problemset/)

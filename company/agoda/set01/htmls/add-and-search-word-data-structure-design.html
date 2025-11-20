@@ -1,0 +1,302 @@
+Title: Design Add and Search Words Data Structure - LeetCode
+
+URL Source: https://leetcode.com/problems/add-and-search-word-data-structure-design/
+
+Markdown Content:
+Design Add and Search Words Data Structure - LeetCode
+
+===============
+
+[![Image 1: LeetCode Logo](https://leetcode.com/_next/static/images/logo-dark-c96c407d175e36c81e236fcfdd682a0b.png) ![Image 2: LeetCode Logo](https://leetcode.com/_next/static/images/logo-ff2b712834cf26bf50a5de58ee27bcef.png)](https://leetcode.com/)
+
+Problem List
+
+Problem List
+
+[](https://leetcode.com/problemset/)
+
+[](https://leetcode.com/problems/course-schedule-ii)[](https://leetcode.com/problems/word-search-ii)
+
+![Image 3: Judging...](https://leetcode.com/_next/static/images/light-judging-9d7b0f1c4035b59af3a7d6ccd8e0ac12.gif)![Image 4: Pending...](https://leetcode.com/_next/static/images/light-pending-9c28f1f18993ec103b273778b5f6a648.gif)
+
+![Image 5: Debugging...](https://leetcode.com/_next/static/images/premium-lightning-judging-4387bb93db459811b028131cb5ea75d4.gif)
+
+Debugging...
+
+Submit
+
+00:00:00
+
+[Register](https://leetcode.com/accounts/signup/?next=%2Fproblems%2Fdesign-add-and-search-words-data-structure%2Fdescription%2F)or[Log in](https://leetcode.com/accounts/login/?next=%2Fproblems%2Fdesign-add-and-search-words-data-structure%2Fdescription%2F)
+
+[Premium](https://leetcode.com/subscribe/?ref=lp_pl&source=qd)
+
+Description
+
+Description
+
+Editorial
+
+Editorial
+
+Solutions
+
+Solutions
+
+Submissions
+
+Submissions
+
+Code
+
+Code
+
+Testcase
+
+Testcase
+
+Test Result
+
+Test Result
+
+[211. Design Add and Search Words Data Structure](https://leetcode.com/problems/design-add-and-search-words-data-structure/)
+
+Medium
+
+Topics
+
+![Image 6: icon](https://leetcode.com/_next/static/images/lock-a6627e2c7fa0ce8bc117c109fb4e567d.svg)Companies
+
+Hint
+
+Design a data structure that supports adding new words and finding if a string matches any previously added string.
+
+Implement the `WordDictionary` class:
+
+*   `WordDictionary()`Initializes the object.
+*   `void addWord(word)` Adds `word` to the data structure, it can be matched later.
+*   `bool search(word)`Returns `true` if there is any string in the data structure that matches `word`or `false` otherwise. `word` may contain dots `'.'` where dots can be matched with any letter.
+
+**Example:**
+
+**Input**
+["WordDictionary","addWord","addWord","addWord","search","search","search","search"]
+[[],["bad"],["dad"],["mad"],["pad"],["bad"],[".ad"],["b.."]]
+**Output**
+[null,null,null,null,false,true,true,true]
+
+**Explanation**
+WordDictionary wordDictionary = new WordDictionary();
+wordDictionary.addWord("bad");
+wordDictionary.addWord("dad");
+wordDictionary.addWord("mad");
+wordDictionary.search("pad"); // return False
+wordDictionary.search("bad"); // return True
+wordDictionary.search(".ad"); // return True
+wordDictionary.search("b.."); // return True
+
+**Constraints:**
+
+*   `1 <= word.length <= 25`
+*   `word` in `addWord` consists of lowercase English letters.
+*   `word` in `search` consist of `'.'` or lowercase English letters.
+*   There will be at most `2` dots in `word` for `search` queries.
+*   At most `104` calls will be made to `addWord` and `search`.
+
+Accepted
+
+834,798/1.7M
+
+Acceptance Rate
+
+47.8%
+
+* * *
+
+Topics
+
+[String](https://leetcode.com/tag/string/)[Depth-First Search](https://leetcode.com/tag/depth-first-search/)[Design](https://leetcode.com/tag/design/)[Trie](https://leetcode.com/tag/trie/)
+
+* * *
+
+![Image 7: icon](https://leetcode.com/_next/static/images/lock-a6627e2c7fa0ce8bc117c109fb4e567d.svg)
+
+Companies
+
+* * *
+
+Hint 1
+
+You should be familiar with how a Trie works. If not, please work on this problem: [Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/) first.
+
+* * *
+
+Similar Questions
+
+[Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/)
+
+Medium
+
+[Prefix and Suffix Search](https://leetcode.com/problems/prefix-and-suffix-search/)
+
+Hard
+
+[Match Substring After Replacement](https://leetcode.com/problems/match-substring-after-replacement/)
+
+Hard
+
+[Sum of Prefix Scores of Strings](https://leetcode.com/problems/sum-of-prefix-scores-of-strings/)
+
+Hard
+
+[Count Prefix and Suffix Pairs II](https://leetcode.com/problems/count-prefix-and-suffix-pairs-ii/)
+
+Hard
+
+[Count Prefix and Suffix Pairs I](https://leetcode.com/problems/count-prefix-and-suffix-pairs-i/)
+
+Easy
+
+* * *
+
+Discussion (124)
+
+Choose a type
+
+Comment
+
+💡 Discussion Rules
+
+1. Please don't post **any solutions** in this discussion.
+
+2. The problem discussion is for asking questions about the problem or for sharing tips - anything except for solutions.
+
+3. If you'd like to share your solution for feedback and ideas, please head to the solutions tab and post it there.
+
+Sort by:Best
+
+No comments yet.
+
+1 2 3 4 13
+
+Copyright © 2025 LeetCode. All rights reserved.
+
+8K
+
+124
+
+87 Online
+
+C++
+
+Auto
+
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10
+
+11
+
+12
+
+13
+
+14
+
+15
+
+16
+
+17
+
+18
+
+19
+
+20
+
+21
+
+class WordDictionary{
+
+public:
+
+WordDictionary(){
+
+}
+
+void addWord(string word){
+
+}
+
+bool search(string word){
+
+}
+
+};
+
+/**
+
+*Your WordDictionary object will be instantiated
+
+and called as such:
+
+*WordDictionary*obj=new WordDictionary();
+
+*obj->addWord(word);
+
+*bool param_2=obj->search(word);
+
+*/
+
+Saved
+
+Ln 1, Col 1
+
+You need to [log in / sign up](https://leetcode.com/accounts/login/?next=%2Fproblems%2Fdesign-add-and-search-words-data-structure%2Fdescription%2F) to run or submit
+
+Case 1
+
+["WordDictionary","addWord","addWord","addWord","search","search","search","search"]
+
+[[],["bad"],["dad"],["mad"],["pad"],["bad"],[".ad"],["b.."]]
+
+9
+
+1
+
+2
+
+›
+
+["WordDictionary","addWord","addWord","addWord","search","search","search","search"]
+
+[[],["bad"],["dad"],["mad"],["pad"],["bad"],[".ad"],["b.."]]
+
+Source
+
+[](https://support.leetcode.com/hc/en-us/articles/32442719377939-How-to-create-test-cases-on-LeetCode)
+
+FindHeaderBarSize
+
+FindTabBarSize
+
+FindBorderBarSize
+
+[](https://leetcode.com/problemset/)

@@ -1,0 +1,303 @@
+Title: Subtree of Another Tree - LeetCode
+
+URL Source: https://leetcode.com/problems/subtree-of-another-tree/
+
+Markdown Content:
+Subtree of Another Tree - LeetCode
+
+===============
+
+[![Image 3: LeetCode Logo](https://leetcode.com/_next/static/images/logo-dark-c96c407d175e36c81e236fcfdd682a0b.png) ![Image 4: LeetCode Logo](https://leetcode.com/_next/static/images/logo-ff2b712834cf26bf50a5de58ee27bcef.png)](https://leetcode.com/)
+
+Problem List
+
+Problem List
+
+[](https://leetcode.com/problemset/)
+
+[](https://leetcode.com/problems/subtree-of-another-tree/)[](https://leetcode.com/problems/subtree-of-another-tree/)
+
+![Image 5: Judging...](https://leetcode.com/_next/static/images/light-judging-9d7b0f1c4035b59af3a7d6ccd8e0ac12.gif)![Image 6: Pending...](https://leetcode.com/_next/static/images/light-pending-9c28f1f18993ec103b273778b5f6a648.gif)
+
+![Image 7: Debugging...](https://leetcode.com/_next/static/images/premium-lightning-judging-4387bb93db459811b028131cb5ea75d4.gif)
+
+Debugging...
+
+Submit
+
+00:00:00
+
+[Register](https://leetcode.com/accounts/signup/?next=%2Fproblems%2Fsubtree-of-another-tree%2Fdescription%2F)or[Log in](https://leetcode.com/accounts/login/?next=%2Fproblems%2Fsubtree-of-another-tree%2Fdescription%2F)
+
+[Premium](https://leetcode.com/subscribe/?ref=lp_pl&source=qd)
+
+Description
+
+Description
+
+Editorial
+
+Editorial
+
+Solutions
+
+Solutions
+
+Submissions
+
+Submissions
+
+Code
+
+Code
+
+Testcase
+
+Testcase
+
+Test Result
+
+Test Result
+
+[572. Subtree of Another Tree](https://leetcode.com/problems/subtree-of-another-tree/)
+
+Easy
+
+Topics
+
+![Image 8: icon](https://leetcode.com/_next/static/images/lock-a6627e2c7fa0ce8bc117c109fb4e567d.svg)Companies
+
+Hint
+
+Given the roots of two binary trees `root` and `subRoot`, return `true` if there is a subtree of `root` with the same structure and node values of`subRoot` and `false` otherwise.
+
+A subtree of a binary tree `tree` is a tree that consists of a node in `tree` and all of this node's descendants. The tree `tree` could also be considered as a subtree of itself.
+
+**Example 1:**
+
+![Image 9](https://assets.leetcode.com/uploads/2021/04/28/subtree1-tree.jpg)**Input:** root = [3,4,5,1,2], subRoot = [4,1,2]
+**Output:** true
+
+**Example 2:**
+
+![Image 10](https://assets.leetcode.com/uploads/2021/04/28/subtree2-tree.jpg)**Input:** root = [3,4,5,1,2,null,null,null,null,0], subRoot = [4,1,2]
+**Output:** false
+
+**Constraints:**
+
+*   The number of nodes in the `root` tree is in the range `[1, 2000]`.
+*   The number of nodes in the `subRoot` tree is in the range `[1, 1000]`.
+*   `-104 <= root.val <= 104`
+*   `-104 <= subRoot.val <= 104`
+
+Accepted
+
+1,170,596/2.3M
+
+Acceptance Rate
+
+50.8%
+
+* * *
+
+Topics
+
+[Tree](https://leetcode.com/tag/tree/)[Depth-First Search](https://leetcode.com/tag/depth-first-search/)[String Matching](https://leetcode.com/tag/string-matching/)[Binary Tree](https://leetcode.com/tag/binary-tree/)[Hash Function](https://leetcode.com/tag/hash-function/)
+
+* * *
+
+![Image 11: icon](https://leetcode.com/_next/static/images/lock-a6627e2c7fa0ce8bc117c109fb4e567d.svg)
+
+Companies
+
+* * *
+
+Hint 1
+
+Which approach is better here- recursive or iterative?
+
+* * *
+
+Hint 2
+
+If recursive approach is better, can you write recursive function with its parameters?
+
+* * *
+
+Hint 3
+
+Two trees **s** and **t** are said to be identical if their root values are same and their left and right subtrees are identical. Can you write this in form of recursive formulae?
+
+* * *
+
+Hint 4
+
+Recursive formulae can be: isIdentical(s,t)= s.val==t.val AND isIdentical(s.left,t.left) AND isIdentical(s.right,t.right)
+
+* * *
+
+Similar Questions
+
+[Count Univalue Subtrees](https://leetcode.com/problems/count-univalue-subtrees/)
+
+Medium
+
+[Most Frequent Subtree Sum](https://leetcode.com/problems/most-frequent-subtree-sum/)
+
+Medium
+
+* * *
+
+Discussion (177)
+
+Choose a type
+
+Comment
+
+💡 Discussion Rules
+
+1. Please don't post **any solutions** in this discussion.
+
+2. The problem discussion is for asking questions about the problem or for sharing tips - anything except for solutions.
+
+3. If you'd like to share your solution for feedback and ideas, please head to the solutions tab and post it there.
+
+Sort by:Best
+
+No comments yet.
+
+1 2 3 4 18
+
+Copyright © 2025 LeetCode. All rights reserved.
+
+8.8K
+
+177
+
+74 Online
+
+C++
+
+Auto
+
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10
+
+11
+
+12
+
+13
+
+14
+
+15
+
+16
+
+17
+
+/**
+
+*Definition for a binary tree node.
+
+*struct TreeNode{
+
+*int val;
+
+*TreeNode*left;
+
+*TreeNode*right;
+
+*TreeNode():val(0),left(nullptr),right
+
+(nullptr){}
+
+*TreeNode(int x):val(x),left(nullptr),ri ght
+
+(nullptr){}
+
+*TreeNode(int x,TreeNode*left,TreeNode
+
+*right):val(x),left(left),right(right){}
+
+*};
+
+*/
+
+class Solution{
+
+public:
+
+bool isSubtree(TreeNode*root,TreeNode*
+
+subRoot){
+
+}
+
+};
+
+Saved
+
+Ln 1, Col 1
+
+You need to [log in / sign up](https://leetcode.com/accounts/login/?next=%2Fproblems%2Fsubtree-of-another-tree%2Fdescription%2F) to run or submit
+
+Case 1 Case 2
+
+root =
+
+[3,4,5,1,2]
+
+subRoot =
+
+[4,1,2]
+
+9
+
+1
+
+2
+
+3
+
+4
+
+›
+
+[3,4,5,1,2]
+
+[4,1,2]
+
+[3,4,5,1,2,null,null,null,null,0]
+
+[4,1,2]
+
+Source
+
+[](https://support.leetcode.com/hc/en-us/articles/32442719377939-How-to-create-test-cases-on-LeetCode)
+
+FindHeaderBarSize
+
+FindTabBarSize
+
+FindBorderBarSize
+
+[](https://leetcode.com/problemset/)
