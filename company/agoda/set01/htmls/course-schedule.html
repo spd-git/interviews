@@ -1,0 +1,266 @@
+Title: Course Schedule - LeetCode
+
+URL Source: https://leetcode.com/problems/course-schedule/
+
+Markdown Content:
+Course Schedule - LeetCode
+
+===============
+
+[![Image 1: LeetCode Logo](https://leetcode.com/_next/static/images/logo-dark-c96c407d175e36c81e236fcfdd682a0b.png) ![Image 2: LeetCode Logo](https://leetcode.com/_next/static/images/logo-ff2b712834cf26bf50a5de58ee27bcef.png)](https://leetcode.com/)
+
+Problem List
+
+Problem List
+
+[](https://leetcode.com/problemset/)
+
+[](https://leetcode.com/problems/reverse-linked-list)[](https://leetcode.com/problems/implement-trie-prefix-tree)
+
+![Image 3: Judging...](https://leetcode.com/_next/static/images/light-judging-9d7b0f1c4035b59af3a7d6ccd8e0ac12.gif)![Image 4: Pending...](https://leetcode.com/_next/static/images/light-pending-9c28f1f18993ec103b273778b5f6a648.gif)
+
+![Image 5: Debugging...](https://leetcode.com/_next/static/images/premium-lightning-judging-4387bb93db459811b028131cb5ea75d4.gif)
+
+Debugging...
+
+Submit
+
+00:00:00
+
+[Register](https://leetcode.com/accounts/signup/?next=%2Fproblems%2Fcourse-schedule%2Fdescription%2F)or[Log in](https://leetcode.com/accounts/login/?next=%2Fproblems%2Fcourse-schedule%2Fdescription%2F)
+
+[Premium](https://leetcode.com/subscribe/?ref=lp_pl&source=qd)
+
+Description
+
+Description
+
+Editorial
+
+Editorial
+
+Solutions
+
+Solutions
+
+Submissions
+
+Submissions
+
+Code
+
+Code
+
+Testcase
+
+Testcase
+
+Test Result
+
+Test Result
+
+[207. Course Schedule](https://leetcode.com/problems/course-schedule/)
+
+Medium
+
+Topics
+
+![Image 6: icon](https://leetcode.com/_next/static/images/lock-a6627e2c7fa0ce8bc117c109fb4e567d.svg)Companies
+
+Hint
+
+There are a total of `numCourses` courses you have to take, labeled from `0` to `numCourses - 1`. You are given an array `prerequisites` where `prerequisites[i] = [ai, bi]` indicates that you **must** take course `bi` first if you want to take course `ai`.
+
+*   For example, the pair `[0, 1]`, indicates that to take course `0` you have to first take course `1`.
+
+Return `true` if you can finish all courses. Otherwise, return `false`.
+
+**Example 1:**
+
+**Input:** numCourses = 2, prerequisites = [[1,0]]
+**Output:** true
+**Explanation:** There are a total of 2 courses to take. 
+To take course 1 you should have finished course 0. So it is possible.
+
+**Example 2:**
+
+**Input:** numCourses = 2, prerequisites = [[1,0],[0,1]]
+**Output:** false
+**Explanation:** There are a total of 2 courses to take. 
+To take course 1 you should have finished course 0, and to take course 0 you should also have finished course 1. So it is impossible.
+
+**Constraints:**
+
+*   `1 <= numCourses <= 2000`
+*   `0 <= prerequisites.length <= 5000`
+*   `prerequisites[i].length == 2`
+*   `0 <= ai, bi < numCourses`
+*   All the pairs prerequisites[i] are **unique**.
+
+Accepted
+
+2,348,789/4.7M
+
+Acceptance Rate
+
+50.3%
+
+* * *
+
+Topics
+
+[Depth-First Search](https://leetcode.com/tag/depth-first-search/)[Breadth-First Search](https://leetcode.com/tag/breadth-first-search/)[Graph](https://leetcode.com/tag/graph/)[Topological Sort](https://leetcode.com/tag/topological-sort/)
+
+* * *
+
+![Image 7: icon](https://leetcode.com/_next/static/images/lock-a6627e2c7fa0ce8bc117c109fb4e567d.svg)
+
+Companies
+
+* * *
+
+Hint 1
+
+This problem is equivalent to finding if a cycle exists in a directed graph. If a cycle exists, no topological ordering exists and therefore it will be impossible to take all courses.
+
+* * *
+
+Hint 2
+
+[Topological Sort via DFS](https://www.cs.princeton.edu/~wayne/kleinberg-tardos/pdf/03Graphs.pdf) - A great tutorial explaining the basic concepts of Topological Sort.
+
+* * *
+
+Hint 3
+
+Topological sort could also be done via [BFS](http://en.wikipedia.org/wiki/Topological_sorting#Algorithms).
+
+* * *
+
+Similar Questions
+
+[Course Schedule II](https://leetcode.com/problems/course-schedule-ii/)
+
+Medium
+
+[Graph Valid Tree](https://leetcode.com/problems/graph-valid-tree/)
+
+Medium
+
+[Minimum Height Trees](https://leetcode.com/problems/minimum-height-trees/)
+
+Medium
+
+[Course Schedule III](https://leetcode.com/problems/course-schedule-iii/)
+
+Hard
+
+[Build a Matrix With Conditions](https://leetcode.com/problems/build-a-matrix-with-conditions/)
+
+Hard
+
+* * *
+
+Discussion (304)
+
+Choose a type
+
+Comment
+
+💡 Discussion Rules
+
+1. Please don't post **any solutions** in this discussion.
+
+2. The problem discussion is for asking questions about the problem or for sharing tips - anything except for solutions.
+
+3. If you'd like to share your solution for feedback and ideas, please head to the solutions tab and post it there.
+
+Sort by:Best
+
+No comments yet.
+
+1 2 3 4 31
+
+Copyright © 2025 LeetCode. All rights reserved.
+
+17.6K
+
+304
+
+358 Online
+
+C++
+
+Auto
+
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+class Solution{
+
+public:
+
+bool canFinish(int numCourses,
+
+vector<vector<int>>&prerequisites){
+
+}
+
+};
+
+Saved
+
+Ln 1, Col 1
+
+You need to [log in / sign up](https://leetcode.com/accounts/login/?next=%2Fproblems%2Fcourse-schedule%2Fdescription%2F) to run or submit
+
+Case 1 Case 2
+
+numCourses =
+
+2
+
+prerequisites =
+
+[[1,0]]
+
+9
+
+1
+
+2
+
+3
+
+4
+
+›
+
+2
+
+[[1,0]]
+
+2
+
+[[1,0],[0,1]]
+
+Source
+
+[](https://support.leetcode.com/hc/en-us/articles/32442719377939-How-to-create-test-cases-on-LeetCode)
+
+FindHeaderBarSize
+
+FindTabBarSize
+
+FindBorderBarSize
+
+[](https://leetcode.com/problemset/)
