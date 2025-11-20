@@ -1,3 +1,5 @@
+.idea/
+
 # do not commit python .pyc files
 *.pyc
 *.pyo
@@ -11,6 +13,8 @@ __pycache__/
 # do not commit pycharm idea files
 #**.idea/
 *.vscode
+
+**/temp_**
 
 # do not commit local install, tmp, log files
 **/tmp/

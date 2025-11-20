@@ -14,5 +14,14 @@ def get_sum(a: int, b: int) -> int:
     return a if a <= max_int else ~(a ^ mask)
 
 
+class Solution:
+    def getSum(self, a: int, b: int) -> int:
+        while b!=0:
+            carry = (a & b)
+            a = (a ^ b)
+            b = (carry << 1)
+        return a
+
+
 if __name__ == "__main__":
-    assert get_sum(1, 2) == 3
+    assert Solution().getSum(1, 2) == 3

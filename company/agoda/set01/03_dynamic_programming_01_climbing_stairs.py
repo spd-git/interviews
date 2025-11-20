@@ -1,4 +1,6 @@
 """Climbing Stairs problem implementation."""
+from itertools import permutations
+
 
 
 def climb_stairs(n: int) -> int:
@@ -12,4 +14,8 @@ def climb_stairs(n: int) -> int:
 
 
 if __name__ == "__main__":
+    perm = permutations([1] * 3, 2)
+
+    for i in perm:
+        print(i)
     assert climb_stairs(3) == 3
