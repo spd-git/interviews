@@ -26,4 +26,5 @@ def decode(s: str) -> List[str]:
 if __name__ == "__main__":
     sample = ["lint", "code", "love", "you"]
     encoded = encode(sample)
+    print(encoded)
     assert decode(encoded) == sample

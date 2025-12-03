@@ -6,6 +6,8 @@
 *.DS_Store
 __pycache__/
 
+/new-monorepo-structure
+
 **/env/
 **/venv/
 **/.idea/sonarlint/
