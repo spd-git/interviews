@@ -1,0 +1,316 @@
+Title: Implement Trie (Prefix Tree) - LeetCode
+
+URL Source: https://leetcode.com/problems/implement-trie-prefix-tree/
+
+Markdown Content:
+Implement Trie (Prefix Tree) - LeetCode
+
+===============
+
+[![Image 1: LeetCode Logo](https://leetcode.com/_next/static/images/logo-dark-c96c407d175e36c81e236fcfdd682a0b.png) ![Image 2: LeetCode Logo](https://leetcode.com/_next/static/images/logo-ff2b712834cf26bf50a5de58ee27bcef.png)](https://leetcode.com/)
+
+Problem List
+
+Problem List
+
+[](https://leetcode.com/problemset/)
+
+[](https://leetcode.com/problems/course-schedule)[](https://leetcode.com/problems/minimum-size-subarray-sum)
+
+![Image 3: Judging...](https://leetcode.com/_next/static/images/light-judging-9d7b0f1c4035b59af3a7d6ccd8e0ac12.gif)![Image 4: Pending...](https://leetcode.com/_next/static/images/light-pending-9c28f1f18993ec103b273778b5f6a648.gif)
+
+![Image 5: Debugging...](https://leetcode.com/_next/static/images/premium-lightning-judging-4387bb93db459811b028131cb5ea75d4.gif)
+
+Debugging...
+
+Submit
+
+00:00:00
+
+[Register](https://leetcode.com/accounts/signup/?next=%2Fproblems%2Fimplement-trie-prefix-tree%2Fdescription%2F)or[Log in](https://leetcode.com/accounts/login/?next=%2Fproblems%2Fimplement-trie-prefix-tree%2Fdescription%2F)
+
+[Premium](https://leetcode.com/subscribe/?ref=lp_pl&source=qd)
+
+Description
+
+Description
+
+Editorial
+
+Editorial
+
+Solutions
+
+Solutions
+
+Submissions
+
+Submissions
+
+Code
+
+Code
+
+Testcase
+
+Testcase
+
+Test Result
+
+Test Result
+
+[208. Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/)
+
+Medium
+
+Topics
+
+![Image 6: icon](https://leetcode.com/_next/static/images/lock-a6627e2c7fa0ce8bc117c109fb4e567d.svg)Companies
+
+A [**trie**](https://en.wikipedia.org/wiki/Trie) (pronounced as "try") or **prefix tree** is a tree data structure used to efficiently store and retrieve keys in a dataset of strings. There are various applications of this data structure, such as autocomplete and spellchecker.
+
+Implement the Trie class:
+
+*   `Trie()` Initializes the trie object.
+*   `void insert(String word)` Inserts the string `word` into the trie.
+*   `boolean search(String word)` Returns `true` if the string `word` is in the trie (i.e., was inserted before), and `false` otherwise.
+*   `boolean startsWith(String prefix)` Returns `true` if there is a previously inserted string `word` that has the prefix `prefix`, and `false` otherwise.
+
+**Example 1:**
+
+**Input**
+["Trie", "insert", "search", "search", "startsWith", "insert", "search"]
+[[], ["apple"], ["apple"], ["app"], ["app"], ["app"], ["app"]]
+**Output**
+[null, null, true, false, true, null, true]
+
+**Explanation**
+Trie trie = new Trie();
+trie.insert("apple");
+trie.search("apple");   // return True
+trie.search("app");     // return False
+trie.startsWith("app"); // return True
+trie.insert("app");
+trie.search("app");     // return True
+
+**Constraints:**
+
+*   `1 <= word.length, prefix.length <= 2000`
+*   `word` and `prefix` consist only of lowercase English letters.
+*   At most `3 * 104` calls **in total** will be made to `insert`, `search`, and `startsWith`.
+
+Accepted
+
+1,441,247/2.1M
+
+Acceptance Rate
+
+68.8%
+
+* * *
+
+Topics
+
+[Hash Table](https://leetcode.com/tag/hash-table/)[String](https://leetcode.com/tag/string/)[Design](https://leetcode.com/tag/design/)[Trie](https://leetcode.com/tag/trie/)
+
+* * *
+
+![Image 7: icon](https://leetcode.com/_next/static/images/lock-a6627e2c7fa0ce8bc117c109fb4e567d.svg)
+
+Companies
+
+* * *
+
+Similar Questions
+
+[Design Add and Search Words Data Structure](https://leetcode.com/problems/design-add-and-search-words-data-structure/)
+
+Medium
+
+[Design Search Autocomplete System](https://leetcode.com/problems/design-search-autocomplete-system/)
+
+Hard
+
+[Replace Words](https://leetcode.com/problems/replace-words/)
+
+Medium
+
+[Implement Magic Dictionary](https://leetcode.com/problems/implement-magic-dictionary/)
+
+Medium
+
+[Encrypt and Decrypt Strings](https://leetcode.com/problems/encrypt-and-decrypt-strings/)
+
+Hard
+
+[Implement Trie II (Prefix Tree)](https://leetcode.com/problems/implement-trie-ii-prefix-tree/)
+
+Medium
+
+[Count Prefix and Suffix Pairs II](https://leetcode.com/problems/count-prefix-and-suffix-pairs-ii/)
+
+Hard
+
+[Count Prefix and Suffix Pairs I](https://leetcode.com/problems/count-prefix-and-suffix-pairs-i/)
+
+Easy
+
+* * *
+
+Discussion (95)
+
+Choose a type
+
+Comment
+
+💡 Discussion Rules
+
+1. Please don't post **any solutions** in this discussion.
+
+2. The problem discussion is for asking questions about the problem or for sharing tips - anything except for solutions.
+
+3. If you'd like to share your solution for feedback and ideas, please head to the solutions tab and post it there.
+
+Sort by:Best
+
+No comments yet.
+
+1 2 3 4 10
+
+Copyright © 2025 LeetCode. All rights reserved.
+
+12.3K
+
+95
+
+0 Online
+
+C++
+
+Auto
+
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10
+
+11
+
+12
+
+13
+
+14
+
+15
+
+16
+
+17
+
+18
+
+19
+
+20
+
+21
+
+22
+
+23
+
+24
+
+25
+
+26
+
+class Trie{
+
+public:
+
+Trie(){
+
+}
+
+void insert(string word){
+
+}
+
+bool search(string word){
+
+}
+
+bool startsWith(string prefix){
+
+}
+
+};
+
+/**
+
+*Your Trie object will be instantiated and calle d
+
+as such:
+
+*Trie*obj=new Trie();
+
+*obj->insert(word);
+
+*bool param_2=obj->search(word);
+
+*bool param_3=obj->startsWith(prefix);
+
+*/
+
+Saved
+
+Ln 1, Col 1
+
+You need to [log in / sign up](https://leetcode.com/accounts/login/?next=%2Fproblems%2Fimplement-trie-prefix-tree%2Fdescription%2F) to run or submit
+
+Case 1
+
+["Trie","insert","search","search","startsWith","insert","search"]
+
+[[],["apple"],["apple"],["app"],["app"],["app"],["app"]]
+
+9
+
+1
+
+2
+
+›
+
+["Trie","insert","search","search","startsWith","insert","search"]
+
+[[],["apple"],["apple"],["app"],["app"],["app"],["app"]]
+
+Source
+
+[](https://support.leetcode.com/hc/en-us/articles/32442719377939-How-to-create-test-cases-on-LeetCode)
+
+FindHeaderBarSize
+
+FindTabBarSize
+
+FindBorderBarSize
+
+[](https://leetcode.com/problemset/)

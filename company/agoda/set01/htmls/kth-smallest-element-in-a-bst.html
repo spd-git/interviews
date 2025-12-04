@@ -1,0 +1,300 @@
+Title: Kth Smallest Element in a BST - LeetCode
+
+URL Source: https://leetcode.com/problems/kth-smallest-element-in-a-bst/
+
+Markdown Content:
+Kth Smallest Element in a BST - LeetCode
+
+===============
+
+[![Image 3: LeetCode Logo](https://leetcode.com/_next/static/images/logo-dark-c96c407d175e36c81e236fcfdd682a0b.png) ![Image 4: LeetCode Logo](https://leetcode.com/_next/static/images/logo-ff2b712834cf26bf50a5de58ee27bcef.png)](https://leetcode.com/)
+
+Problem List
+
+Problem List
+
+[](https://leetcode.com/problemset/)
+
+[](https://leetcode.com/problems/majority-element-ii)[](https://leetcode.com/problems/power-of-two)[](https://leetcode.com/problems/find-the-start-and-end-number-of-continuous-ranges)
+
+![Image 5: Judging...](https://leetcode.com/_next/static/images/light-judging-9d7b0f1c4035b59af3a7d6ccd8e0ac12.gif)![Image 6: Pending...](https://leetcode.com/_next/static/images/light-pending-9c28f1f18993ec103b273778b5f6a648.gif)
+
+![Image 7: Debugging...](https://leetcode.com/_next/static/images/premium-lightning-judging-4387bb93db459811b028131cb5ea75d4.gif)
+
+Debugging...
+
+Submit
+
+00:00:00
+
+[Register](https://leetcode.com/accounts/signup/?next=%2Fproblems%2Fkth-smallest-element-in-a-bst%2Fdescription%2F)or[Log in](https://leetcode.com/accounts/login/?next=%2Fproblems%2Fkth-smallest-element-in-a-bst%2Fdescription%2F)
+
+[Premium](https://leetcode.com/subscribe/?ref=lp_pl&source=qd)
+
+Description
+
+Description
+
+Editorial
+
+Editorial
+
+Solutions
+
+Solutions
+
+Submissions
+
+Submissions
+
+Code
+
+Code
+
+Testcase
+
+Testcase
+
+Test Result
+
+Test Result
+
+[230. Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst/)
+
+Medium
+
+Topics
+
+![Image 8: icon](https://leetcode.com/_next/static/images/lock-a6627e2c7fa0ce8bc117c109fb4e567d.svg)Companies
+
+Hint
+
+Given the `root` of a binary search tree, and an integer `k`, return _the_`kth`_smallest value (**1-indexed**) of all the values of the nodes in the tree_.
+
+**Example 1:**
+
+![Image 9](https://assets.leetcode.com/uploads/2021/01/28/kthtree1.jpg)**Input:** root = [3,1,4,null,2], k = 1
+**Output:** 1
+
+**Example 2:**
+
+![Image 10](https://assets.leetcode.com/uploads/2021/01/28/kthtree2.jpg)**Input:** root = [5,3,6,2,4,null,null,1], k = 3
+**Output:** 3
+
+**Constraints:**
+
+*   The number of nodes in the tree is `n`.
+*   `1 <= k <= n <= 104`
+*   `0 <= Node.val <= 104`
+
+**Follow up:** If the BST is modified often (i.e., we can do insert and delete operations) and you need to find the kth smallest frequently, how would you optimize?
+
+Accepted
+
+2,076,397/2.7M
+
+Acceptance Rate
+
+76.1%
+
+* * *
+
+Topics
+
+[Tree](https://leetcode.com/tag/tree/)[Depth-First Search](https://leetcode.com/tag/depth-first-search/)[Binary Search Tree](https://leetcode.com/tag/binary-search-tree/)[Binary Tree](https://leetcode.com/tag/binary-tree/)
+
+* * *
+
+![Image 11: icon](https://leetcode.com/_next/static/images/lock-a6627e2c7fa0ce8bc117c109fb4e567d.svg)
+
+Companies
+
+* * *
+
+Hint 1
+
+Try to utilize the property of a BST.
+
+* * *
+
+Hint 2
+
+Try in-order traversal. (Credits to @chan13)
+
+* * *
+
+Hint 3
+
+What if you could modify the BST node's structure?
+
+* * *
+
+Hint 4
+
+The optimal runtime complexity is O(height of BST).
+
+* * *
+
+Similar Questions
+
+[Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/)
+
+Easy
+
+[Second Minimum Node In a Binary Tree](https://leetcode.com/problems/second-minimum-node-in-a-binary-tree/)
+
+Easy
+
+* * *
+
+Discussion (174)
+
+Choose a type
+
+Comment
+
+💡 Discussion Rules
+
+1. Please don't post **any solutions** in this discussion.
+
+2. The problem discussion is for asking questions about the problem or for sharing tips - anything except for solutions.
+
+3. If you'd like to share your solution for feedback and ideas, please head to the solutions tab and post it there.
+
+Sort by:Best
+
+No comments yet.
+
+1 2 3 4 18
+
+Copyright © 2025 LeetCode. All rights reserved.
+
+12.5K
+
+174
+
+126 Online
+
+C++
+
+Auto
+
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10
+
+11
+
+12
+
+13
+
+14
+
+15
+
+16
+
+17
+
+/**
+
+*Definition for a binary tree node.
+
+*struct TreeNode{
+
+*int val;
+
+*TreeNode*left;
+
+*TreeNode*right;
+
+*TreeNode():val(0),left(nullptr),right
+
+(nullptr){}
+
+*TreeNode(int x):val(x),left(nullptr),ri ght
+
+(nullptr){}
+
+*TreeNode(int x,TreeNode*left,TreeNode
+
+*right):val(x),left(left),right(right){}
+
+*};
+
+*/
+
+class Solution{
+
+public:
+
+int kthSmallest(TreeNode*root,int k){
+
+}
+
+};
+
+Saved
+
+Ln 1, Col 1
+
+You need to [log in / sign up](https://leetcode.com/accounts/login/?next=%2Fproblems%2Fkth-smallest-element-in-a-bst%2Fdescription%2F) to run or submit
+
+Case 1 Case 2
+
+root =
+
+[3,1,4,null,2]
+
+k =
+
+1
+
+9
+
+1
+
+2
+
+3
+
+4
+
+›
+
+[3,1,4,null,2]
+
+1
+
+[5,3,6,2,4,null,null,1]
+
+3
+
+Source
+
+[](https://support.leetcode.com/hc/en-us/articles/32442719377939-How-to-create-test-cases-on-LeetCode)
+
+FindHeaderBarSize
+
+FindTabBarSize
+
+FindBorderBarSize
+
+[](https://leetcode.com/problemset/)
